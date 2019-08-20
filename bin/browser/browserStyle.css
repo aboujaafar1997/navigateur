@@ -1,0 +1,152 @@
+@font-face {
+    font-family: PT_Sans;
+    src: url('../resources/PT_Sans.ttf');
+}
+*{
+    -fx-font-family: 'PT_Sans', sans-serif;
+    -fx-text-fill: #182a28;
+}
+.browserTabs {
+	-fx-background-color: #d1d7db;
+}
+.browserTab {
+	-fx-background-color: #d1d7db;
+    -fx-border-width: 0 1 0 0;
+    -fx-border-style: solid;
+    -fx-border-color: rgba(149, 165, 166, 0.8);
+}
+.browserTab:selected{
+	-fx-background-color: #ffffff;
+    -fx-border-width: 0 0 0 0;
+}
+.controllerBar {
+	-fx-background-color: #ffffff;
+}
+.browserTextField {
+    -fx-text-fill: #7f8c8d;
+    -fx-text-padding: 0 0 0 50;
+    -fx-highlight-fill: derive(-fx-control-inner-background,-20%);
+    -fx-highlight-text-fill: -fx-text-inner-color;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
+    -fx-background-color: #e5ebef;
+    -fx-background-insets: 1;
+    -fx-cursor: text;
+    -fx-padding: 4 7 4 7;
+}
+.urlTextField {
+    -fx-padding: 4 7 4 40;
+}
+.browserTextField:focused {
+    -fx-text-fill: #041628;
+    -fx-highlight-fill: -fx-accent;
+    -fx-highlight-text-fill: white;
+    -fx-background-color: #ffffff, #2980b9, #9cd3f7, #ffffff;
+    -fx-background-insets: -0.2, 1, -1.4, 2;
+    -fx-prompt-text-fill: transparent;
+}
+.browseButton {
+    -fx-background-radius: 25;
+    -fx-background-insets: 1;
+}
+.browseButton:hover {
+    -fx-background-color: rgba(55, 56, 59, 0.1);
+}
+.browseButton:pressed {
+    -fx-background-color: rgba(55, 56, 59, 0.2);
+}
+.formTitle{
+    -fx-font-size: 20pt;
+    -fx-text-fill: white;
+}
+.form{
+    -fx-background-color: #d1d7db;
+}
+.formHeader{
+    -fx-background-color: #007acc;
+}
+.formContext{
+    -fx-padding: 10 0 0 0;
+    -fx-background-color: white;
+}
+.link{
+    -fx-cursor: hand;
+}
+.link:hover{
+    -fx-text-fill: #007acc;
+}
+.list-view{
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+.list-view {
+     -fx-selection-bar: rgba(0, 122, 204, 0.2);
+ }
+.formButton{
+    -fx-border-width: 1;
+    -fx-border-style: solid;
+    -fx-border-color: rgba(0, 122, 204, 0.5);
+    -fx-background-color: transparent;
+    -fx-text-fill: rgb(0, 122, 204);
+    -fx-font-size: 10pt;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-font-weight: bold;
+    -fx-padding: 5 14 5 14;
+    -fx-cursor: hand;
+}
+.formButton:hover{
+    -fx-background-color: rgba(0, 122, 204, 0.1);
+}
+.formButton:pressed{
+    -fx-background-color: rgba(0, 122, 204, 0.2);
+}
+.formLine{
+    -fx-background-color: rgba(24, 42, 60, 0.25);
+}
+.tab-pane {
+    -fx-background-color: white;
+    -fx-tab-max-height: -1;
+}
+.tab{
+    -fx-background-color: white;
+    -fx-text-fill: white;
+}
+.tab-pane .tab-header-area {
+    visibility: hidden ;
+}
+.webStateMessage{
+    -fx-text-fill: #bdc3c7;
+    -fx-font-size: 15pt;
+}
+.webState{
+    -fx-background-color: white;
+}
+.webStateTitle{
+    -fx-font-size: 25pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: #007acc;
+}
+.downloadURL{
+    -fx-text-fill: #0a5c92;
+    -fx-font-size: 13pt;
+    -fx-font-weight: bold;
+}
+.downloadInfo{
+    -fx-font-size: 10pt;
+    -fx-text-fill: rgba(34, 35, 37, 0.75);
+}
+.downloadList{
+    -fx-background-color: #d1d7db;
+}
+.downloadSiteBox{
+    -fx-background-color: white;
+    -fx-padding: 10;
+    -fx-background-radius: 1;
+}
+.searchIcon {
+    -fx-image: url(../resources/search.png);
+    -fx-opacity: 0.5;
+}
+.searchIcon:selected {
+    -fx-image: url(../resources/search_selected.png);
+}
